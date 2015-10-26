@@ -22,7 +22,7 @@ en-US:
     - Fri
     - Sat
     month_names:
-    - 
+    -
     - January
     - February
     - March
@@ -36,7 +36,7 @@ en-US:
     - November
     - December
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -77,7 +77,7 @@ en-US:
     currency:
       format:
         format: ! '%u%n'
-        unit: $
+        unit: €
         separator: .
         delimiter: ! ','
         precision: 2

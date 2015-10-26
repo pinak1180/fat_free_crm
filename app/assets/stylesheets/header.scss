@@ -7,7 +7,7 @@ $color_header: skyblue;
 $color_header_background: #1e4262;
 $color_logo: greenyellow;
 $color_tab: white;
-$color_tab_background: #466bb1;
+$color_tab_background: #cc0000;
 $color_active_tab: black;
 $color_active_tab_background: #E5E5E5;
 $color_hover_tab: navy;
@@ -71,23 +71,21 @@ $color_footer: grey;
       margin: 2px 0px 0px 0px; } } }
 
 .tabs {
-  background: $color_header_background;
-  height: $size_tab_height;
-  padding: 0px;
-  text-align: center;
-  width: 100%;
-  i.fa { 
-    font-size: 130%; 
+background: white none repeat scroll 0 0;
+height: 33px;
+padding: 12px;
+text-align: center;
+width: 100%;
+  i.fa {
+    font-size: 130%;
     vertical-align:text-top; }
   ul {
     // :margin 0px 25%,  18% for 5th tab
     margin-left: 15px; }
   li {
-    float: left;
-    font-size: 12px;
-    line-height: 16px;
-    list-style: none;
-    margin: 0px 4px 0px 1px; }
+  font-size: 19px;
+line-height: 17px;
+list-style: outside none none;}
   a:link, a:visited {
     img {
       background: none;
