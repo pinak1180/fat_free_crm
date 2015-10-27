@@ -1,25 +1,25 @@
 #header
   #welcome
-    - if current_user
-      #{t :welcome},
-      -# This span gets updated on the fly if user changes her name.
-      %span#welcome_username= current_user.name
-      %span> !&nbsp;&nbsp;
-
-      = link_to(t(:quick_find), "#", :id => "jumper") << " |"
-      = link_to(t(:profile), profile_path) << " |"
-      - if current_user.admin?
-        = link_to(t(:admin), admin_path) << " |"
-      = link_to(t(:logout), logout_path, :method => :delete)
-      = render "/layouts/jumpbox"
-    - else
   .span12
     .logo
       = image_tag("PruUK_RGB.svg", class: "logo-svg")
       %br
-      = link_to(t(:login), login_path) << " |"
-      = link_to(t(:sign_up), signup_path) << " |" if can_signup?
-      = link_to(t(:about), "#", :title => t(:about_ffc), :onclick => "$('#about').dialog({ title: this.title, modal: true }); return false;")
+      - if !current_user
+        = link_to(t(:login), login_path) << " |"
+        = link_to(t(:sign_up), signup_path) << " |" if can_signup?
+        = link_to(t(:about), "#", :title => t(:about_ffc), :onclick => "$('#about').dialog({ title: this.title, modal: true }); return false;")
+      - else
+        #{t :welcome},
+        -# This span gets updated on the fly if user changes her name.
+        %span#welcome_username= current_user.name
+        %span> !&nbsp;&nbsp;
+
+        = link_to(t(:quick_find), "#", :id => "jumper") << " |"
+        = link_to(t(:profile), profile_path) << " |"
+        - if current_user.admin?
+          = link_to(t(:admin), admin_path) << " |"
+        = link_to(t(:logout), logout_path, :method => :delete)
+        = render "/layouts/jumpbox"
     %h1
       Pru
       %span CRM

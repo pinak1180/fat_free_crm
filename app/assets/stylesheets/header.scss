@@ -34,12 +34,16 @@ h1 {
   padding: 18px 20px 0 0;
 }
 
-#adviserwebapp .tabless {
+#adviserwebapp .tabless, .tabs {
   margin: 0;
   height: 100%;
   width: 100%;
   border-top: 3px solid #c00;
   border-bottom: 1px solid #CFD3D5;
+}
+
+#header a, a:hover{
+  color: #c00;
 }
 
 #header h1{
@@ -111,9 +115,10 @@ h1 {
       margin: 2px 0px 0px 0px; } } }
 
 .tabs {
+  padding-top: 2px;
   background: white;
       height: 30px;
-      padding: 0px;
+      // padding: 0px;
       text-align: center;
       width: 100%;
   i.fa {
