@@ -9,6 +9,10 @@ $sidebar_width: 210px;
 
 // Common page elements.
 //------------------------------------------------------------------------------
+a:hover {
+  background: gray !important;
+  color: white !important;
+}
 .title {
   border-bottom: 1px gray solid;
   color: $color_title;
@@ -578,7 +582,7 @@ $sidebar_width: 210px;
     padding: 4px 15px;
     text-decoration: none; }
   ahover: {
-    background: mediumblue;
+    background: grey !important;
     color: white; }; }
 
 // Star ratings.
@@ -675,7 +679,7 @@ span.handle img {
     -webkit-border-radius: 3px;
     border-radius: 3px; }
   a:hover {
-    background: #dadada; }
+    background: gray; }
   li {
     display:inline;
   }
