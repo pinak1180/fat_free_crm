@@ -71,11 +71,11 @@ $color_footer: grey;
       margin: 2px 0px 0px 0px; } } }
 
 .tabs {
-background: white none repeat scroll 0 0;
-height: 33px;
-padding: 12px;
-text-align: center;
-width: 100%;
+  background: white;
+      height: 30px;
+      padding: 0px;
+      text-align: center;
+      width: 100%;
   i.fa {
     font-size: 130%;
     vertical-align:text-top; }
@@ -83,19 +83,22 @@ width: 100%;
     // :margin 0px 25%,  18% for 5th tab
     margin-left: 15px; }
   li {
-  font-size: 19px;
-line-height: 17px;
-list-style: outside none none;}
+    font-size: 16px;
+    float: left;
+    line-height: 16px;
+    list-style: none;
+
+    margin: 0px 2px 0px 1px;}
   a:link, a:visited {
     img {
       background: none;
       vertical-align: bottom;
       float: none;
       margin-right: 7px; }
-    background: $color_tab_background;
-    color: white;
-    float: left;
-    padding: 4px 15px 6px;
+      background: #cc0000;
+      color: white;
+      float: left;
+      padding: 4px 18px 6px;
     text-align: center;
     text-decoration: none;
     -moz-border-radius: {
