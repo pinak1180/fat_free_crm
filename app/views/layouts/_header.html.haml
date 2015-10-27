@@ -13,8 +13,13 @@
       = link_to(t(:logout), logout_path, :method => :delete)
       = render "/layouts/jumpbox"
     - else
+  .span12
+    .logo
+      = image_tag("PruUK_RGB.svg", class: "logo-svg")
+      %br
       = link_to(t(:login), login_path) << " |"
       = link_to(t(:sign_up), signup_path) << " |" if can_signup?
       = link_to(t(:about), "#", :title => t(:about_ffc), :onclick => "$('#about').dialog({ title: this.title, modal: true }); return false;")
-  %h3
-    = link_to("PFP - Pipeline Tracker", root_path)
+    %h1
+      Pru
+      %span CRM

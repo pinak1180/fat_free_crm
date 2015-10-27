@@ -4,7 +4,7 @@
 // See MIT-LICENSE file or http://www.opensource.org/licenses/mit-license.php
 //------------------------------------------------------------------------------
 $color_header: skyblue;
-$color_header_background: #1e4262;
+$color_header_background: linear-gradient(to bottom,white 0,#e9eaeb 100%);
 $color_logo: greenyellow;
 $color_tab: white;
 $color_tab_background: #cc0000;
@@ -18,6 +18,46 @@ $color_footer: grey;
 
 // Header, tabs, and footer.
 //------------------------------------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  color: #c00;
+  font-family: "stagweb-medium";
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+#header .logo {
+  float: right;
+  padding: 18px 20px 0 0;
+}
+
+#adviserwebapp .tabless {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  border-top: 3px solid #c00;
+  border-bottom: 1px solid #CFD3D5;
+}
+
+#header h1{
+  font-weight: bold;
+}
+
+#header h1 span {
+  color: #68727a;
+  font-weight: bold;
+}
+
+#header h1 {
+  line-height: 1;
+  margin: 0;
+  padding: 26px 20px 26px 20px;
+  text-shadow: 0 1px white;
+}
+
 #header {
   background: $color_header_background;
   color: $color_header;
